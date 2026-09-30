@@ -1,8 +1,9 @@
+"use strict"
 // Husk fra dag 1: skriv "use strict" herunder
 
 
 // Skriv selv: hent lion-knappen ved hjælp af dens id. Variablen skal hedde getLionBtn
-
+const getLionBtn = document.getElementById(`lion`);
 
 // Nyt i dag: new Audio() opretter et lyd-objekt. src angiver, hvilken lydfil objektet skal afspille.
 const soundLion = new Audio();
@@ -13,6 +14,16 @@ getLionBtn.addEventListener("click", () => {
     stopAllSounds();
     soundLion.play();
 });
+
+
+const getDogBtn = document.getElementById(`dog`);
+
+const soundDog = new Audio ();
+getDogBtn.addEventListener("click" ,() => {
+    stopAllSounds();
+    soundDog.play();
+})
+
 
 
 // Skriv sammen med underviseren: gentag samme mønster for "dog"
